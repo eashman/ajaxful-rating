@@ -13,7 +13,7 @@ class AjaxfulRatingGenerator < Rails::Generators::NamedBase
     template 'model.rb', File.join('app/models', class_path, "rate.rb")
   end
 
-  def create_migration
+  def create_rating_migration
     migration_template 'migration.rb', "db/migrate/create_rates.rb"
   end
 
